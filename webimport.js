@@ -1,6 +1,126 @@
 window.DictionaryXyz = (function () {
     // Prepare the dictionary
     var dict = {};
+    // We want to do nouns and honorifics first
+    var nouns = [
+        // Japanese keishō
+        {
+            id: '-san',
+            def: 'A general-purpose Japanese honorific.',
+            word: '-san'
+        },
+        {
+            id: 'san',
+            def: 'A general-purpose Japanese honorific.',
+            word: '-san'
+        },
+        {
+            id: '-chan',
+            def: 'A Japanese honorific language used to convey a sense of cuteness.',
+            word: '-chan'
+        },
+        {
+            id: 'chan',
+            def: 'A Japanese honorific language used to convey a sense of cuteness.',
+            word: '-chan'
+        },
+        {
+            id: '-kun',
+            def: 'A Japanese honorific that refers to young men or to one\'s junior.',
+            word: '-kun'
+        },
+        {
+            id: 'kun',
+            def: 'A Japanese honorific that refers to young men or to one\'s junior.',
+            word: '-kun'
+        },
+        {
+            id: '-senpai',
+            def: 'A Japanese honorific that refers to one\'s senior.',
+            word: 'senpai'
+        },
+        {
+            id: 'senpai',
+            def: 'A Japanese honorific that refers to one\'s senior.',
+            word: 'senpai'
+        },
+        {
+            id: '-sensei',
+            def: 'A Japanese honorific used to refer to teachers, doctors, coaches, instructors, and the like.',
+            word: 'sensei'
+        },
+        {
+            id: 'sensei',
+            def: 'A Japanese honorific used to refer to teachers, doctors, coaches, instructors, and the like.',
+            word: 'sensei'
+        },
+        {
+            id: 'kouhai',
+            def: 'One\'s junior or subordinate.',
+            word: 'kōhai'
+        },
+        {
+            id: 'kōhai',
+            def: 'One\'s junior or subordinate.',
+            word: 'kōhai'
+        },
+        {
+            id: 'kohai',
+            def: 'One\'s junior or subordinate.',
+            word: 'kōhai'
+        },
+        // animals
+        {
+            id: 'dog',
+            def: 'A domestic mammal that is descended from the wolf.'
+        },
+        {
+            id: 'cat',
+            def: 'A domestic mammal with soft fur, a short snout, and retractable claws.'
+        },
+        {
+            id: 'horse',
+            def: 'A domestic mammal with hoofs, a mane, and a tail, used for riding and racing.'
+        },
+        {
+            id: 'cow',
+            def: 'A domestic breed of ox that is used to obtain milk from.'
+        },
+        // other random nouns
+        {
+            id: 'phone',
+            def: 'A device that allows people to communicate by transmitting one\'s voice as an electrical signal.'
+        },
+        {
+            id: 'sentience',
+            def: 'The state of being concious or self-aware.'
+        },
+        // related adjective
+        {
+            id: 'sentient',
+            type: 'adj',
+            def: 'Having sentience or self-awareness.'
+        },
+        // anywho back to nouns, lol
+        {
+            id: 'enthusiast',
+            def: 'A person who is very interested in a particular activity or subject.'
+        },
+        {
+            id: 'nerd',
+            def: 'A person who is highly interested in a subject; an enthusiast (informal).'
+        }
+    ];
+    nouns.forEach(word => {
+        if(!dict[word.id]) {
+            dict[word.id] = [];
+        }
+        dict[word.id].push({
+            type: word.type||'noun',
+            definition: word.def,
+            word: word.word
+        });
+    });
     // Handle all the verbs
     var verbs = [
         {
@@ -14,6 +134,11 @@ window.DictionaryXyz = (function () {
             def: ['To cease to happen; to end.'],
             past: 'stopped',
             present: 'stopping'
+        },
+        {
+            verb: 'escape',
+            def: ['To move away from something in fear; to flee'],
+            present: 'escaping'
         },
         {
             verb: 'walk',
@@ -30,6 +155,11 @@ window.DictionaryXyz = (function () {
             def: ['To move on foot at a pace between a walk and a run.'],
             past: 'jogged',
             present: 'jogging'
+        },
+        {
+            verb: 'phone',
+            def: ['To call someone using a telephone device.'],
+            present: 'phoning'
         },
         {
             verb: 'become',
@@ -186,89 +316,8 @@ window.DictionaryXyz = (function () {
             definition: 'Of the color '+color.color
         });
     });
-    // finally lets prepare everything else
-    var otherWords = [
-        // Japanese keishō
-        {
-            id: '-san',
-            def: 'A general-purpose Japanese honorific.',
-            word: '-san'
-        },
-        {
-            id: 'san',
-            def: 'A general-purpose Japanese honorific.',
-            word: '-san'
-        },
-        {
-            id: '-chan',
-            def: 'A Japanese honorific language used to convey a sense of cuteness.',
-            word: '-chan'
-        },
-        {
-            id: 'chan',
-            def: 'A Japanese honorific language used to convey a sense of cuteness.',
-            word: '-chan'
-        },
-        {
-            id: '-kun',
-            def: 'A Japanese honorific that refers to young men or to one\'s junior.',
-            word: '-kun'
-        },
-        {
-            id: 'kun',
-            def: 'A Japanese honorific that refers to young men or to one\'s junior.',
-            word: '-kun'
-        },
-        {
-            id: '-senpai',
-            def: 'A Japanese honorific that refers to one\'s senior.',
-            word: 'senpai'
-        },
-        {
-            id: 'senpai',
-            def: 'A Japanese honorific that refers to one\'s senior.',
-            word: 'senpai'
-        },
-        {
-            id: '-sensei',
-            def: 'A Japanese honorific used to refer to teachers, doctors, coaches, instructors, and the like.',
-            word: 'sensei'
-        },
-        {
-            id: 'sensei',
-            def: 'A Japanese honorific used to refer to teachers, doctors, coaches, instructors, and the like.',
-            word: 'sensei'
-        },
-        // animals
-        {
-            id: 'dog',
-            def: 'A domestic animal that is descended from the wolf.'
-        },
-        {
-            id: 'cat',
-            def: 'A domestic animal with soft fur, a short snout, and retractable claws.'
-        },
-        // other random nouns
-        {
-            id: 'phone',
-            def: 'A device that allows people to communicate by transmitting one\'s voice as an electrical signal.'
-        },
-        {
-            id: 'sentience',
-            def: 'The state of being concious or self-aware.'
-        },
-        // related adjective
-        {
-            id: 'sentient',
-            type: 'adj',
-            def: 'Having sentience or self-awareness.'
-        },
-        // anywho back to nouns, lol
-        {
-            id: 'enthusiast',
-            def: 'A person who is very interested in a particular activity or subject.'
-        }
-    ];
+    // Prepare everything else - adjectives, adverbs, etc
+    var otherWords = [];
     otherWords.forEach(word => {
         if(!dict[word.id]) {
             dict[word.id] = [];
