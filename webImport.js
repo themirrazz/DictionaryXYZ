@@ -1,2 +1,0 @@
-window.DictionaryXyz = (function () {
-})();
