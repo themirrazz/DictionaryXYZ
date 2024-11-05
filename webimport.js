@@ -324,13 +324,42 @@ window.DictionaryXyz = (function () {
         });
     });
     // Prepare everything else - adjectives, adverbs, etc
-    var otherWords = [];
+    var otherWords = [
+        {
+            id: 'artificial',
+            def: 'Not real or genuine; fake.'
+        },
+        {
+            id: 'yes',
+            type: 'excl',
+            def: 'An exclamation used to indicate acknowledgement or agreement.'
+        },
+        {
+            id: 'no',
+            type: 'excl',
+            def: 'An exclamation used to indicate disagreement.'
+        },
+        {
+            id: 'interested',
+            def: 'To have an interest in something.'
+        },
+        {
+            id: 'when',
+            type: 'conj',
+            def: 'At or during a certain time.'
+        },
+        {
+            id: 'why',
+            type: 'adverb',
+            def: 'Which reason.'
+        }
+    ];
     otherWords.forEach(word => {
         if(!dict[word.id]) {
             dict[word.id] = [];
         }
         dict[word.id].push({
-            type: word.type||'noun',
+            type: word.type||'adj',
             definition: word.def,
             word: word.word
         });
