@@ -172,6 +172,13 @@ window.DictionaryXyz = (function () {
             def: ['To rotate.', 'To become.']
         },
         {
+            verb: 'weeb out',
+            def: ['To act or be weeby'],
+            past: 'weebed out',
+            present: 'weebing out',
+            tps: 'weebs out'
+        },
+        {
             verb: 'wash',
             def: ['To clean, typically with water and soap.'],
             tps: 'washes'
