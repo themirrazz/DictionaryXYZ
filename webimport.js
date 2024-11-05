@@ -5,54 +5,54 @@ window.DictionaryXyz = (function () {
     var verbs = [
         {
             verb: 'go',
-            def: ['to move around', 'to proceed or start', 'to leave'],
+            def: ['To move around.', 'To proceed or start.', 'To leave.'],
             past: 'went',
             tps: 'goes'
         },
         {
             verb: 'stop',
-            def: ['to cease to happen; to end'],
+            def: ['To cease to happen; to end.'],
             past: 'stopped',
             present: 'stopping'
         },
         {
             verb: 'walk',
-            def: ['to move at a regular pace on foot']
+            def: ['To move at a regular pace on foot.']
         },
         {
             verb: 'run',
-            def: ['to move at a fast pace on foot'],
+            def: ['To move at a fast pace on foot.'],
             past: 'ran',
             present: 'running'
         },
         {
             verb: 'jog',
-            def: ['to move on foot at a pace between a walk and a run'],
+            def: ['To move on foot at a pace between a walk and a run.'],
             past: 'jogged',
             present: 'jogging'
         },
         {
             verb: 'become',
-            def: ['to turn into; to start to be'],
+            def: ['To turn into; to start to be.'],
             past: 'became',
             present: 'becoming'
         },
         {
             verb: 'turn',
-            def: ['to rotate', 'to become']
+            def: ['To rotate.', 'To become.']
         },
         {
             verb: 'wash',
-            def: ['to clean, typically with water and soap'],
+            def: ['To clean, typically with water and soap.'],
             tps: 'washes'
         },
         {
             verb: 'exist',
-            def: ['to be in reality; to be alive']
+            def: ['To be in reality; to be alive.']
         },
         {
             verb: 'be',
-            def: ['to exist', 'to have specific attributes', 'to take place at'],
+            def: ['To exist.', 'To have specific attributes.', 'To take place at.'],
             past: 'was',
             tps: 'is',
             fps: 'am',
@@ -61,8 +61,13 @@ window.DictionaryXyz = (function () {
         },
         {
             verb: 'love',
-            def: ['to strongly like or feel affection for'],
+            def: ['To strongly like or feel affection for.'],
             present: 'loving'
+        },
+        {
+            verb: 'hate',
+            def: ['To have a strong feeling of dislike or contempt for.'],
+            present: 'hating'
         }
     ];
     // let's add the verbs to the dictionary
@@ -121,51 +126,51 @@ window.DictionaryXyz = (function () {
     var colors = [
         {
             color: 'red',
-            def: 'a color at the low end of the spectrum next to orange'
+            def: 'A color at the low end of the spectrum next to orange.'
         },
         {
             color: 'orange',
-            def: 'a color on the spectrum between red and yellow'
+            def: 'A color on the spectrum between red and yellow.'
         },
         {
             color: 'yellow',
-            def: 'a color on the spectrum between orange and green'
+            def: 'A color on the spectrum between orange and green.'
         },
         {
             color: 'green',
-            def: 'a color on the spectrum between yellow and blue'
+            def: 'A color on the spectrum between yellow and blue.'
         },
         {
             color: 'blue',
-            def: 'a color on the spectrum between green and indigo'
+            def: 'A color on the spectrum between green and indigo.'
         },
         {
             color: 'indigo',
-            def: 'a color that is a mix between blue and purple'
+            def: 'A color that is a mix between blue and purple.'
         },
         {
             color: 'purple',
-            def: 'a color on the far end of the spectrum next to indigo'
+            def: 'A color on the far end of the spectrum next to indigo.'
         },
         {
             color: 'white',
-            def: 'a color produced by reflecting all colors of light'
+            def: 'A color produced by reflecting all colors of light.'
         },
         {
             color: 'black',
-            def: 'a color produced by absorbing all colors of light'
+            def: 'A color produced by absorbing all colors of light.'
         },
         {
             color: 'grey',
-            def: 'a color between white and black that only reflects some of the light'
+            def: 'A color between white and black that only reflects some of the light.'
         },
         {
             color: 'pink',
-            def: 'a light shade of magenta'
+            def: 'A light shade of magenta.'
         },
         {
             color: 'magenta',
-            def: 'a color that is a mix between red and light purple'
+            def: 'A color that is a mix between red and light purple.'
         }
     ];
     colors.forEach(color => {
@@ -186,62 +191,82 @@ window.DictionaryXyz = (function () {
         // Japanese keishō
         {
             id: '-san',
-            def: 'A general-purpose honorific from the Japanese language',
+            def: 'A general-purpose Japanese honorific.',
             word: '-san'
         },
         {
             id: 'san',
-            def: 'A general-purpose honorific from the Japanese language',
+            def: 'A general-purpose Japanese honorific.',
             word: '-san'
         },
         {
             id: '-chan',
-            def: 'An honorific from the Japanese language used to convey a sense of cuteness',
+            def: 'A Japanese honorific language used to convey a sense of cuteness.',
             word: '-chan'
         },
         {
             id: 'chan',
-            def: 'An honorific from the Japanese language used to convey a sense of cuteness',
+            def: 'A Japanese honorific language used to convey a sense of cuteness.',
             word: '-chan'
         },
         {
             id: '-kun',
-            def: 'An honorific from the Japanese language that refers to young men or to one\'s junior',
+            def: 'A Japanese honorific that refers to young men or to one\'s junior.',
             word: '-kun'
         },
         {
             id: 'kun',
-            def: 'An honorific from the Japanese language that refers to young men or to one\'s junior',
+            def: 'A Japanese honorific that refers to young men or to one\'s junior.',
             word: '-kun'
+        },
+        {
+            id: '-senpai',
+            def: 'A Japanese honorific that refers to one\'s senior.',
+            word: 'senpai'
+        },
+        {
+            id: 'senpai',
+            def: 'A Japanese honorific that refers to one\'s senior.',
+            word: 'senpai'
+        },
+        {
+            id: '-sensei',
+            def: 'A Japanese honorific used to refer to teachers, doctors, coaches, instructors, and the like.',
+            word: 'sensei'
+        },
+        {
+            id: 'sensei',
+            def: 'A Japanese honorific used to refer to teachers, doctors, coaches, instructors, and the like.',
+            word: 'sensei'
         },
         // animals
         {
             id: 'dog',
-            def: 'A domestic animal that is descended from the wolf'
+            def: 'A domestic animal that is descended from the wolf.'
         },
         {
             id: 'cat',
-            def: 'A domestic animal with soft fur, a short snout, and retractable claws'
+            def: 'A domestic animal with soft fur, a short snout, and retractable claws.'
         },
         // other random nouns
         {
             id: 'phone',
-            def: 'A device that allows people to communicate by transmitting one\'s voice as an electrical signal'
+            def: 'A device that allows people to communicate by transmitting one\'s voice as an electrical signal.'
         },
         {
             id: 'sentience',
-            def: 'The state of being concious or self-aware'
+            def: 'The state of being concious or self-aware.'
         },
         // related adjective
         {
             id: 'sentient',
             type: 'adj',
-            def: 'Having sentience or self-awareness'
+            def: 'Having sentience or self-awareness.'
         },
         // anywho back to nouns, lol
         {
             id: 'enthusiast',
-            def: 'A person who is very interested in a particular activity or subject'
+            def: 'A person who is very interested in a particular activity or subject.'
         }
     ];
     otherWords.forEach(word => {
