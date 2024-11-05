@@ -276,7 +276,7 @@ window.DictionaryXyz = (function () {
         dict[word.id].push({
             type: word.type||'noun',
             definition: word.def,
-            word: word.name
+            word: word.word
         });
     });
     return dict;
