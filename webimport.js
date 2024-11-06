@@ -69,6 +69,32 @@ window.DictionaryXyz = (function () {
             def: 'One\'s junior or subordinate.',
             word: 'kōhai'
         },
+        // Spanish honorifics
+        {
+            id: 'señor',
+            def: 'A Spanish honorific used to refer to a man.'
+        },
+        {
+            id: 'señorita',
+            def: 'A Spanish honorific used to refer to a young and unmarried woman.'
+        },
+        {
+            id: 'señora',
+            def: 'A Spanish honorific used to refer to an older or married woman.'
+        },
+        // other foriegn words
+        {
+            id: "tsunami",
+            def: "A series of large waves caused by a displacement of water from a body."
+        },
+        {
+            id: "baguette",
+            def: "A long loaf of French bread."
+        },
+        {
+            id: 'baguette',
+            def: "A wand, baton, or rod."
+        },
         // animals
         {
             id: 'dog',
@@ -109,6 +135,253 @@ window.DictionaryXyz = (function () {
         {
             id: 'nerd',
             def: 'A person who is highly interested in a subject; an enthusiast (informal).'
+        },
+        // intangible things
+        {
+            id: 'worry',
+            def: 'A state of anxiety or being concerned about something.'
+        },
+        {
+            id: 'feeling',
+            def: 'An emotion state or reaction.'
+        },
+        {
+            id: 'desire',
+            def: 'A strong want for something.'
+        },
+        {
+            id: 'want',
+            def: 'A wish for something.'
+        },
+        {
+            id: 'love',
+            def: 'A strong feeling of affection towards something.'
+        },
+        {
+            id: 'love',
+            def: 'A high interest and pleasure in something.'
+        },
+        {
+            id: 'love',
+            def: 'A person or thing that is loved by someone.'
+        },
+        {
+            id: 'life',
+            def: 'The existence of a human or animal.'
+        },
+        // leisure activities
+        {
+            id: 'walk',
+            def: 'The act of travelling on an excursion by foot; a stroll.'
+        },
+        {
+            id: 'run',
+            def: 'An act of running.'
+        },
+        {
+            id: 'jog',
+            def: 'An act of jogging, or slow-running.'
+        },
+        // crimes
+        {
+            id: 'arson',
+            def: 'The action of intentionally lighting a piece of land or property on fire.'
+        },
+        {
+            id: 'theft',
+            def: 'The action of stealing something from another person.'
+        },
+        {
+            id: 'murder',
+            def: 'The act of killing another person.'
+        },
+        {
+            id: 'robbery',
+            def: 'The action of comitting theft by using force or threats.'
+        },
+        {
+            id: 'burglary',
+            def: 'The action of comitting theft by trespassing onto another\'s property.'
+        },
+        // slang words
+        {
+            id: 'earrape',
+            def: 'A sound that is obnoxiously loud or frightening.'
+        },
+        {
+            id: 'ear rape',
+            word: 'earrape',
+            def: 'A sound that is obnoxiously loud or frightening.'
+        },
+        {
+            id: 'ear-rape',
+            word: 'earrape',
+            def: 'A sound that is obnoxiously loud or frightening.'
+        },
+        {
+            id: 'aura',
+            def: 'How cool a certain person, thing, or group of people is (informal).'
+        },
+        {
+            // has to go here for sorting reasons
+            id: 'sigma',
+            word: 'sigma (∑)',
+            def: 'The 18th letter of the greek alphabet.'
+        },
+        {
+            id: 'sigma',
+            def: 'A person who prefers to operate independently from others; a lone wolf (informal).'
+        },
+        {
+            id: 'rizz',
+            def: 'Charisma (informal).'
+        },
+        {
+            id: 'rizzler',
+            def: 'A person who is very charismatic or attractive, even without trying to be (informal).'
+        },
+        // let's talk about computers
+        {
+            id: 'computer',
+            def: 'An electronic device that can store and process data digitally.'
+        },
+        {
+            id: 'hard disk',
+            def: 'A part of a computer that stores digital information.'
+        },
+        {
+            id: 'ram',
+            word: 'RAM',
+            def: 'A part of a computer that stores digital information until the power to it is turned off.'
+        },
+        // again, this has to be here
+        {
+            id: 'ram',
+            def: 'A male sheep that has not been uncastrated.'
+        },
+        {
+            id: 'cpu',
+            word: 'CPU',
+            def: 'The main part of a computer that handles the processing of the information.'
+        },
+        // tv shows and movies
+        {
+            id: 'movie',
+            def: 'A video designed for viewing on television or at theaters.'
+        },
+        {
+            id: 'cartoon',
+            def: 'A video that is animated digitally or by hand.'
+        },
+        {
+            id: 'shōnen',
+            def: 'A movie or tv series, usually anime, that is aimed at teen boys between the age of 12 and 17.'
+        },
+        {
+            id: 'shonen',
+            word: 'shōnen',
+            def: 'A movie or tv series, usually anime, that is aimed at teen boys between the age of 12 and 17.'
+        },
+        {
+            id: 'shounen',
+            word: 'shōnen',
+            def: 'A movie or tv series, usually anime, that is aimed at teen boys between the age of 12 and 17.'
+        },
+        {
+            id: 'shōjo',
+            def: 'A movie or tv series, usually anime, that is aimed at teen girls between the age of 12 and 17.'
+        },
+        {
+            id: 'shoujo',
+            word: 'shōjo',
+            def: 'A movie or tv series, usually anime, that is aimed at teen girls between the age of 12 and 17.'
+        },
+        {
+            id: 'shojo',
+            word: 'shōjo',
+            def: 'A movie or tv series, usually anime, that is aimed at teen girls between the age of 12 and 17.'
+        },
+        {
+            id: 'drama',
+            def: 'A movie or tv show that is dramaticized.'
+        },
+        {
+            id: 'comedy',
+            def: 'A movie or tv show designed to appeal to viewers\' senses of humor.'
+        },
+        {
+            id: 'romcom',
+            def: 'A movie or tv show that is a combination of the romance and comedy genres.'
+        },
+        {
+            id: 'rom-com',
+            word: 'romcom',
+            def: 'A movie or tv show that is a combination of the romance and comedy genres.'
+        },
+        {
+            id: 'rom com',
+            word: 'romcom',
+            def: 'A movie or tv show that is a combination of the romance and comedy genres.'
+        },
+        {
+            id: 'sitcom',
+            def: 'A subgenre of comedy that involves recurring characters navigating a series of humorous situations.'
+        },
+        // this has to be here bc it fits nowhere else
+        {
+            id: 'harem',
+            def: 'The state of being surrounded by girls which are all romantically interested in you.'
+        },
+        {
+            id: 'harem',
+            def: 'A tv show or movie, usually anime, where the protagonist is surrounded by multiple girls who are all romantically interested int hem.'
+        },
+        // verbs that are really nouns
+        {
+            id: 'help',
+            def: 'Aid or assistance.'
+        },
+        {
+            id: 'ding',
+            def: 'A beeping or ringing noise, commonly associated with notification sounds.'
+        },
+        {
+            id: 'text',
+            def: 'A book or other form of written work.'
+        },
+        {
+            id: 'text',
+            def: 'Information represented by using characters in a specified alphabet or alphabets.'
+        },
+        {
+            id: 'text',
+            def: 'A text message.'
+        },
+        // other random nouns
+        {
+            id: 'speech',
+            def: 'The expression of thoughts via vocal sounds; talking.'
+        },
+        {
+            id: 'speech',
+            def: 'A formal address delivered to an audience.'
+        },
+        {
+            id: 'name',
+            def: 'A proper noun used to distinguish a specific item from other similar items.'
+        },
+        // random body parts
+        {
+            id: 'face',
+            def: 'The front section of a person or animal\'s head.'
+        },
+        {
+            id: 'tounge',
+            def: 'A body part inside the mouth used for tasting food.'
+        },
+        {
+            id: 'heart',
+            def: 'A crucial organ for humans and animals that pumps blood to the rest of the body.'
         }
     ];
     nouns.forEach(word => {
