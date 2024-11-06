@@ -376,7 +376,7 @@ window.DictionaryXyz = (function () {
             def: 'The front section of a person or animal\'s head.'
         },
         {
-            id: 'tounge',
+            id: 'tongue',
             def: 'A body part inside the mouth used for tasting food.'
         },
         {
